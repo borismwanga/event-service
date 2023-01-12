@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :order_items
+  resources :assignments
+  resources :drinks
+  resources :orders
+  resources :tables
   devise_for :users
   root to: "pages#home"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
